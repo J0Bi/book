@@ -30,7 +30,12 @@
 
     <!-- Custom Theme Style -->
     <link href="./addANewBook_files/custom.min.css" rel="stylesheet">
-  </head>
+  <style id="__web-inspector-hide-shortcut-style__" type="text/css">
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
+{
+    visibility: hidden !important;
+}
+</style></head>
 
   <body class="nav-md">
     <div class="container body">
@@ -278,11 +283,11 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main" style="min-height: 739px;">
+        <div class="right_col" role="main" style="min-height: 758px;">
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Add a new book</h3>
+                <h3>Ajouter un nouveau livre</h3>
               </div>
 
               
@@ -292,7 +297,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Information about your book</h2>
+                    <h2>Informations sur le livre</h2>
                     
                     <div class="clearfix"></div>
                   </div>
@@ -301,14 +306,14 @@
                     <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Title <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Titre <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Writer <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Ecrivain <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
@@ -318,29 +323,58 @@
                         <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Style </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <select class="form-control" data-parsley-id="50">
-<option>Choose your style</option>
-<option>Option one</option>
-<option>Option two</option>
-<option>Option three</option>
-<option>Option four</option>
+<option>Choisissez votre style</option>
+<option>Anthologie</option>
+<option>Anthropologie</option>
+<option>Arts</option>
+<option>Autobiographie</option>
+<option>Autoportrait</option>
+<option>Bande dessinée</option>
+<option>Beaux-Livres</option>
+<option>Biographie</option>
+<option>Chroniques</option>
+<option>Cinéma</option>
+<option>Comic</option>
+<option>Conte</option>
+<option>Contes</option>
+<option>Document</option>
+<option>Economie</option>
+<option>Entretiens</option>
+<option>Essai</option>
+<option>Fables</option>
+<option>Fantastique</option>
+<option>Histoire</option>
+<option>Humour</option>
+<option>Journal</option>
+<option>Manga</option>
+<option>Mémoire</option>
+<option>Reccueil</option>
+<option>Récit de voyage</option>
+<option>Roman</option>
+<option>Roman policier</option>
+<option>Science-fiction</option>
+<option>Théâtre</option>
+<option>Thriller</option>
+<option>Tragédie</option>
+<option>Voyages</option>
 </select>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Complet</label>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Lu</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div id="gender" class="btn-group" data-toggle="buttons">
                             <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="male" data-parsley-multiple="gender" data-parsley-id="12"> &nbsp; Yes &nbsp;
+                              <input type="radio" name="gender" value="male" data-parsley-multiple="gender" data-parsley-id="12"> &nbsp; Oui &nbsp;
                             </label>
                             <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="female" data-parsley-multiple="gender"> No
+                              <input type="radio" name="gender" value="female" data-parsley-multiple="gender"> Non
                             </label>
                           </div>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Summary 
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Résumé 
                         </label>
                         
                           <div class="col-md-6 col-sm-6 col-xs-12">
@@ -349,21 +383,38 @@
                       </div>
 
 <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date 
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date d'achat 
                         </label>
                         
                           <div class="col-md-6 col-sm-6 col-xs-12">
                           <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
                         </div>
                       </div>
-                      <div class="ln_solid"></div>
-                      <div class="form-group">
-                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <button type="submit" class="btn btn-success">Add</button><button class="btn btn-primary" type="button">Cancel</button>
-						  
-                          
+<div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date de lecture 
+                        </label>
+                        
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
                         </div>
                       </div>
+
+<div class="form-group">
+    <label for="message" class="control-label col-md-3 col-sm-3 col-xs-12">Commentaires</label>
+                 <div class="col-md-6 col-sm-6 col-xs-12">
+                         
+                     <textarea id="Comments" class="form-control col-md-7 col-xs-12" name="Comments" data-parsley-trigger="keyup" data-parsley-minlength="0" data-parsley-maxlength="50" data-parsley-minlength-message="Come on! You need to enter at maximum a 50 caracters."></textarea>
+                        </div>
+                      </div>
+
+                          
+
+                      <div class="ln_solid"></div><div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button type="submit" class="btn btn-success">Ajouter</button><button class="btn btn-primary" type="button">Annuler</button>
+                      </div>
+                      </div>
+                      
 
                     </form>
                   </div>
@@ -385,9 +436,7 @@
 
         <!-- footer content -->
         <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com/">Colorlib</a>
-          </div>
+          
           <div class="clearfix"></div>
         </footer>
         <!-- /footer content -->
